@@ -4,6 +4,7 @@
 		<title>Saasapp</title>
 		<%= csrf_meta_tags %>
 		
+		<!-- Import Open Sans font -->
 		<link rel="preconnect" href="//fonts.gstatic.com">
 		<link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 		
@@ -12,7 +13,8 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<!-- Header navigation bar -->
+		<nav class="navbar navbar-static-top" role="navigation">
 			<div class='container'>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -27,11 +29,10 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="/about">About</a></li>
 					</ul>
-				</div><!-- /.navbar-collapse -->
+				</div>
 			</div>
 		</nav>
-		<div class="container">
-			<%= yield %>
-		</div>
+
+		<%= yield %>
 	</body>
 </html>
